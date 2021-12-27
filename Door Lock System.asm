@@ -49,7 +49,7 @@ CMD:      ACALL CMD_WRITE
            SJMP LCD_OUT
 EXIT:	   RET          
 
-LINE2:MOV A,#0C0H                     //Reading The 12 Words input Value from RFID TAG OR Some other Sourse.
+LINE2:MOV A,#0C0H                     ;Reading The 12 Words input Value from RFID TAG OR Some other Sourse.
     ACALL CMD_WRITE
     RET   
     
@@ -64,7 +64,7 @@ LINE2:MOV A,#0C0H                     //Reading The 12 Words input Value from RF
            RET
    
 
-CHECK_PASSWORD:	CLR FLG                                //Check Password Function For two Passwords
+CHECK_PASSWORD:	CLR FLG                                ;Check Password Function For two Passwords
       		MOV R2,#12D
       		MOV R1,#160D
       		MOV DPTR,#PASS1
@@ -135,13 +135,13 @@ DELAY: CLR E
     CLR RW
     RET
     
-INIT_COMMANDS:  DB 0CH,01H,06H,83H,3CH,0    //DataBase For the Output of LCD
+INIT_COMMANDS:  DB 0CH,01H,06H,83H,3CH,0    ;DataBase For the Output of LCD
 TEXT1: DB "RFID ACCESS",0  
 TEXT2: DB "Swipe TagS..",0
 TEXT3: DB "Access allowed",0
 TEXT4: DB "Access denied",0
 
-PASS1: DB "18008DC02E7B"                 // Passwords to Unlock Door.
+PASS1: DB "18008DC02E7B"                 ;Passwords to Unlock Door.
 PASS2: DB "7500511ECDF7"
    
     END
