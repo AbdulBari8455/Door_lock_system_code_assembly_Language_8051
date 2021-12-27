@@ -1,13 +1,13 @@
-/*You are required to write a program to communicate 
-two 89C52 microcontrollers serially at a 9600 baud rate. 
+/* You are required to write a program to communicate 
+two 89C52 microcontrollers serially at a 9600 baud rate 
 Connect eight SPDT switches with port P1 and a 
-push button with P3.2 of microcontroller-1. These 
-eight SPDT switches represent a byte. 
+push button with P3.2 of microcontroller-1 These 
+eight SPDT switches represent a byte 
 Whenever the push button is pressed and then released,
 the corresponding byte is transmitted to the 2nd 
-microcontroller. The microcontroller-2 displays the 
+microcontroller The microcontroller-2 displays the 
 received string on Hyper Terminal. Assume oscillator 
-frequency to be 11.0592MHz.*/ 
+frequency to be 11.0592MHz */ 
 
 ;Code
 ;transmitter
