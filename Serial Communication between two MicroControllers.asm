@@ -1,4 +1,4 @@
-/* You are required to write  */ a program to communicate 
+# You are required to write   a program to communicate 
 two 89C52 microcontrollers serially at a 9600 baud rate 
 Connect eight SPDT switches with port P1 and a 
 push button with P3.2 of microcontroller-1 These 
